@@ -1,8 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[left=1in,right=1in]{geometry}
 \usepackage{enumerate}
-%\usepackage{fontspec}
-%\setmainfont{Calibri}
 \title{stupIT bylaws}
 \date{April 28, 2014}
 \author{General Assembly of the 28th of April 2014}
@@ -13,15 +11,12 @@
 % Format the paragraphs. The command expects an argument (the number of the paragraph).
 \renewcommand{\paragraph}[1]{\@startsection{paragraph}{4}{\z@}%
   {-3.25ex\@plus -1ex \@minus -.2ex}%
-  %{1.5ex \@plus .2ex}%
   {0ex}
-  {\normalfont\normalsize\bfseries}{}{\bf{\S\space#1.}}}
-% Format the sub-sections. The command expects the number of the sub-section as an argument.
+  {\normalfont\normalsize\bfseries}{}{\bf{\S~#1.}}}
 \renewcommand{\subparagraph}[1]{\@startsection{subparagraph}{5}{\z@}%
   {-3.25ex\@plus -1ex \@minus -.2ex}%
-  %{1.5ex \@plus .2ex}%
   {0ex}
-  {\normalfont\normalsize\bfseries}{}{\bf{pt.\space#1.}}} 
+  {\normalfont\normalsize\bfseries}{}{\bf{pt.~#1.}}} 
 
 \makeatother
 
