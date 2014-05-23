@@ -19,14 +19,16 @@ you will make a pull-request, and the changes can be discussed and eventually me
 
     First thing to do is to create your own fork. Press the *Fork* button in the top
      of the page. You will now have a repository of your own. Your fork can be found on
-     ```https://github.itu.dk/[LOGIN]/stupIT_by-laws.git```
+     ```
+     https://github.itu.dk/[LOGIN]/stupIT_by-laws.git
+     ```
      
 1. **Clone the repository to your local drive**
 
     Before you can start working on the changes, you will have to have them locally on your computer.
     Open a terminal window (or Command prompt) and navigate to the directory where you will keep your copy.
     Once you are in place, run this code:
-    ```bash
+    ```
     # Clone this repository to your local drive
     $ git clone https://github.itu.dk/stupIT/stupIT_by-laws.git
     ```
