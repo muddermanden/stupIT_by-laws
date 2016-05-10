@@ -1,6 +1,15 @@
 before_install:
-- "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng"
+- sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended
+  texlive-latex-extra texlive-fonts-extra texlive-latex-recommended dvipng
 script:
 - mkdir _build
 - pdflatex -output-directory _build stupIT-bylaws.tex
-- pdflatex -output-directory _build rop.tex
+- pdflatex -output-directory _build stupIT-bylaws.tex
+deploy:
+  provider: releases
+  api_key:
+    secure: srBf5d2ljyelJjnQuxevKH4yPMfhtEEDkZbpmfN7iixspTpgsPhpwhEeSvWpcepbsd0oxziiZxg1MY/MhjWX5iR2QXV4sR6PQUD10rCAcQhQi6omnNwDvGl7gToblqnqJ/Ru1O3jd1a92j8iaDFupT4StYZYxNv3G7DpJ+yinREy124ap89KSwv6xgKAmKs5ef15bMo9Sc+V8s0ODxMLiUxyCPSy0JaJcs4CCgTR7ngfzmEpLFp9q6vBXuCkSnf3WqA8dy2Tuk3Cm14ZSCgqwdL13QU2oKt3ZI/S2KC4v8nGEIyu08bR5CqJRMnc3+LRVWlx2nI9FoI/sI8OXwdrJ6pHGd7OlryEdKQSYRRmHSnHbZLi0nCpYY+ysiQXKm1RCx33kfPnhSM1lISW34Jq6jmib7/ACTpgOtoXGIoohLRxSUNF9MvZ2CKJs+COVYjBqeggwwHY0jw9+ABdAdrtueezSRQfjrSdOnEF6QYGaVmzK1qoqsnofnwYEEPtlTow1s0F3fKAkfCVt19IDy0trfbD55dPPXshXGVTPQM9Gnj3kD3MhJPQsA6XnN9nGkiLWmqo91Yes0TsQ8sFQSXdQk/maBA3J6RvgPvOP5xW2dJAAEGuSq5YSoxLrBL4rBikP/Nsbxd47iIzrC3q7KNi7HgKwc509ah+uAc/ALcIk9w=
+  file: _build/stupIT-bylaws.pdf
+  skip_cleanup: true
+  on:
+      tags: true
