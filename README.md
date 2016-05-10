@@ -1,4 +1,4 @@
-Official stupIT by-laws
+Official stupIT by-laws [![Build Status](https://travis-ci.org/stupIT-ITU/stupIT_by-laws.svg?branch=master)](https://travis-ci.org/stupIT-ITU/stupIT_by-laws)
 ==============
 
 ## Intention
