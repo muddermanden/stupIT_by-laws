@@ -3,6 +3,4 @@ before_install:
 script:
 - mkdir _build
 - pdflatex -output-directory _build stupIT-bylaws.tex
-- pdflatex -output-directory _build stupIT-bylaws.tex
-- pdflatex -output-directory _build rop.tex
 - pdflatex -output-directory _build rop.tex
