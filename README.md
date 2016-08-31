@@ -14,13 +14,13 @@ branch out and make the changes in the branch. Please provide an explanatory nam
 the branch and a description of the committed changes. When you are satisfied with the result
 you will make a pull-request, and the changes can be discussed and eventually merged into the official version.
 
-### How to make a suggestopm for a change
+### How to make a suggestion for a change
 1. **Fork the repository**
 
     First thing to do is to create your own fork. Press the *Fork* button in the top
      of the page. You will now have a repository of your own. Your fork can be found on
      ```
-     https://github.itu.dk/[LOGIN]/stupIT_by-laws.git
+     https://github.com/[LOGIN]/stupIT_by-laws.git
      ```
      
 1. **Clone the repository to your local drive**
@@ -30,7 +30,7 @@ you will make a pull-request, and the changes can be discussed and eventually me
     Once you are in place, run this code:
     ```
     # Clone this repository to your local drive
-    $ git clone https://github.itu.dk/stupIT/stupIT_by-laws.git
+    $ git clone https://github.com/stupIT-ITU/stupIT_by-laws.git
     ```
 
 1. **Branch out**
@@ -50,12 +50,3 @@ you will make a pull-request, and the changes can be discussed and eventually me
     Because the bylaws are written in LaTeX and then compiled into the pdf, you will need 
     a LaTeX editor in order to **compile the pdf**. You can make the changes to .tex file and 
     the follow the remaining steps, then ask someone else to compile it for you.
-
-1. **Commit your changes**
-
-    *to be updated...*
-
-1. **Make a pull-request**
-
-    *to be updated...*
-    
